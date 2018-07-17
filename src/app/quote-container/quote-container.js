@@ -8,7 +8,7 @@ import MediaButton from './media-button/media-button';
 class QuoteContainer extends Component {
     render() {
       return (
-        <div className="Quote shadow">
+        <div className="Quote shadow" id="quote-box">
             <QuoteText 
               quote={this.props.quote.quote}
               color={this.props.color}
@@ -21,11 +21,14 @@ class QuoteContainer extends Component {
               color={this.props.color}
               title="Tweet this quote!"
               icon="fa fa-twitter"
+              id="tweet-quote"
+              href="twitter.com/intent/tweet"
             />
             <MediaButton 
               color={this.props.color}
               title="Post this quote on tumblr!"
               icon="fa fa-tumblr"
+              id="tumblr-quote"
             />
             <NewQuote 
               color={this.props.color}

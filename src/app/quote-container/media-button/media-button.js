@@ -4,7 +4,11 @@ import './media-button.css';
 class MediaButton extends Component {
     render() {
       return (
-          <a style={anchorStyle(this.props.color)} className="Anchor inline shadowButton" target="_blank" title={this.props.title}>
+          <a style={anchorStyle(this.props.color)} 
+            className="Anchor inline shadowButton" target="_blank" 
+            title={this.props.title} id={this.props.id}
+            href={this.props.href}
+            >
             <i className={this.props.icon}></i>
           </a>
       );

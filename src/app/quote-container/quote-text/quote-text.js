@@ -5,7 +5,7 @@ class QuoteText extends Component {
     render() {
       return (
         <div>
-            <p className="Quote-text" style={textStyle(this.props.color)}>
+            <p className="Quote-text" id="text" style={textStyle(this.props.color)}>
                 <i className="fa fa-quote-left"></i>{this.props.quote}
             </p>
         </div>

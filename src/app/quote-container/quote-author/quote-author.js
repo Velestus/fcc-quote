@@ -5,7 +5,7 @@ class QuoteAuthor extends Component {
     render() {
       return (
         <div>
-            <p className="Quote-author" style={textStyle(this.props.color)}>
+            <p className="Quote-author" id="author" style={textStyle(this.props.color)}>
                 - {this.props.author}
             </p>
         </div>

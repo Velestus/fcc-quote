@@ -8,7 +8,7 @@ class NewQuote extends Component {
           <button 
             onClick={() => this.props.onClick()}
             style={buttonStyle(this.props.color)}
-            className="Button shadowButton"
+            className="Button shadowButton" id="new-quote"
           >
             New Quote
           </button>
